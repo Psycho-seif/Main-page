@@ -1,10 +1,8 @@
-// Function to generate simulated SpO2 data
 function generateSpO2() {
-  // Simulate SpO2 data between 95 and 100
   return Math.floor(Math.random() * (100 - 95 + 1)) + 95;
 }
 
-// Function to update the chart with simulated SpO2 data
+// Function to update the chart with SpO2 data
 function updateChart() {
   const data = [];
   const ctx = document.getElementById('myChart').getContext('2d');
@@ -36,7 +34,7 @@ function updateChart() {
     }
   });
 
-  // Function to update the chart every 3 seconds with simulated SpO2 data
+  // Function to update the chart every 3 seconds with SpO2 data
   const interval = setInterval(() => {
     const newSpO2 = generateSpO2(); // Simulated SpO2
     data.push(newSpO2); // Add the new SpO2 data point
@@ -63,7 +61,7 @@ function displayLastSpO2(SpO2) {
   spo2Text.innerHTML = `SpO2 is: ${SpO2}%`;
 }
 
-// Call the function to update the chart with simulated SpO2 data when the page loads
+// Call the function to update the chart with SpO2 data when the page loads
 window.onload = function() {
   updateChart();
   // Prevent scrolling on number change
