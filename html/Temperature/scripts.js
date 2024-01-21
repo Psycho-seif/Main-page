@@ -1,10 +1,8 @@
-    // Function to generate simulated temperature data
     function generateTemperature() {
-      // Simulate temperature data between 33.5 and 36.5
       return (Math.random() * (36.5 - 33.5) + 33.5).toFixed(1);
     }
 
-    // Function to update the chart with simulated temperature data
+    // Function to update the chart with temperature data
     function updateChart(chartId) {
       const data = [];
       const ctx = document.getElementById(chartId).getContext('2d');
