@@ -1,10 +1,8 @@
-// Function to generate simulated heart rate data
 function generateHeartRate() {
-  // Simulate heart rate data between 60 and 100 BPM
   return Math.floor(Math.random() * (100 - 60 + 1)) + 60;
 }
 
-// Function to update the chart with simulated heart rate data
+// Function to update the chart with heart rate data
 function updateChart() {
   const data = [];
   const ctx = document.getElementById('myChart').getContext('2d');
